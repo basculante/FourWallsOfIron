@@ -1,0 +1,21 @@
+.container-str {
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+}
+
+.button-back {
+	margin-bottom: auto;
+	padding-top: 30px;
+}
+
+.card.str {
+	width: 40rem;
+	height: 30rem;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	background: #F8F8F8;
+	border: solid;
+	border-width: 5px;
+	border-color: #F8F8F8;
+}

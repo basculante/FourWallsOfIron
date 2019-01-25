@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.container {
+	display: flex;
+}
+
+.card-img-top-strength {
+	width: auto;
+	height: 22rem;
+}
+
+.card-img-top-bodybuilding {
+	width: auto;
+	height: 22rem;
+}
+
+.card {
+	width: 40rem;
+	height: 30rem;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	background: #F8F8F8;
+	border: solid;
+	border-width: 5px;
+	border-color: #F8F8F8;
+	transition: all .2s ease-in-out;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card-title {
+	font-family: 'Anton', sans-serif;
+	font-size: 35px;
+}
+
