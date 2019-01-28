@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.container-ss {
+	text-align: center;
+	padding: 10px;
+}
+
+.ss-title {
+	padding: 20px;
+	font-size: 50px;
+}
+
+.card.sspage {
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	padding-top: 30px;
+}
+
+.button-submit {
+	width: 20rem;
+	cursor: pointer;
+	border-radius: 10px;
+  	box-shadow: 0 2px #999;
+}
+
+.button-submit:hover {
+	background-color: #B2BABB;
+}
+
+.button-submit:active {
+  background-color: #B2BABB;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttom-submit-page {
+	padding: 20px;
+}
+
+.ss-program {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+.title-phase {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.input-text {
+	text-align: center;
+}
+
+.increment-cell {
+	margin-left: 10px;
+}
+
+.table-title {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.place-holder-text {
+	padding: 20px;
+}
+
+.title-phase {
+	text-decoration: underline;
+}
+
+.table-space {
+	margin: 50px;
+}
+
+.row-spacing {
+	padding: 20px;
+}

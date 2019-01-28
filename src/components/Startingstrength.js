@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Startingstrength.css';
 
 class StartingStrength extends React.Component{
 	state = {
@@ -48,82 +47,75 @@ class StartingStrength extends React.Component{
 		const powerAdded = this.state.powerAdded;
 		const submitted = this.state.submitted;
 		return(
-			<div className="container-ss">
-				<div className="ss-title">
-					STARTING STRENGTH
-				</div>
-				<form onSubmit={this.getProgram} className="card sspage">
-						<table className="card-body sspage">
+			<div>
+				<form onSubmit={this.getProgram}>
+						<table>
 							<tbody>
-								<tr className="table-title">
+								<tr>
 									<th>Exercise</th>
-									<th>5X3 RM (Reps x Sets)</th>
+									<th>1RM</th>
 									<th>Increment (lbs)</th>
 								</tr>
 								<tr>
 									<td>Squat</td>
-									<td><input className="input-text" type="text" name="squat"/></td>
-									<td className="increment">
+									<td><input type="text" name="squat"/></td>
+									<td>
 									<input type="radio" id="2.5" name="squatWeight" value="2.5"/>2.5
-									<input className= "increment-cell" type="radio" id="5" name="squatWeight" value="5"/>5
-									<input className= "increment-cell" type="radio" id="10" name="squatWeight" value="10"/>10
+									<input type="radio" id="5" name="squatWeight" value="5"/>5
+									<input type="radio" id="10" name="squatWeight" value="10"/>10
 									</td>
 								</tr>
 								<tr>
 									<td>Bench Press</td>
-									<td><input className="input-text" type="text" name="benchPress"/></td>
-									<td className="increment">
+									<td><input type="text" name="benchPress"/></td>
+									<td>
 									<input type="radio" id="2.5" name="benchWeight" value="2.5"/>2.5
-									<input className= "increment-cell" type="radio" id="5" name="benchWeight" value="5"/>5
-									<input className= "increment-cell" type="radio" id="10" name="benchWeight" value="10"/>10
+									<input type="radio" id="5" name="benchWeight" value="5"/>5
+									<input type="radio" id="10" name="benchWeight" value="10"/>10
 									</td>
 								</tr>
 								<tr>
 									<td>Deadlift</td>
-									<td><input className="input-text" type="text" name="deadlift"/></td>
-									<td className="increment">
+									<td><input type="text" name="deadlift"/></td>
+									<td>
 									<input type="radio" id="2.5" name="deadliftWeight" value="2.5"/>2.5
-									<input className= "increment-cell" type="radio" id="5" name="deadliftWeight" value="5"/>5
-									<input className= "increment-cell" type="radio" id="10" name="deadliftWeight" value="10"/>10
+									<input type="radio" id="5" name="deadliftWeight" value="5"/>5
+									<input type="radio" id="10" name="deadliftWeight" value="10"/>10
 									</td>
 								</tr>
 								<tr>
 									<td>Overhead Press</td>
-									<td><input className="input-text" type="text" name="ohp"/></td>
-									<td className="increment">
+									<td><input type="text" name="ohp"/></td>
+									<td>
 									<input type="radio" id="2.5" name="ohpWeight" value="2.5"/>2.5
-									<input className= "increment-cell" type="radio" id="5" name="ohpWeight" value="5"/>5
-									<input className= "increment-cell" type="radio" id="10" name="ohpWeight" value="10"/>10
+									<input type="radio" id="5" name="ohpWeight" value="5"/>5
+									<input type="radio" id="10" name="ohpWeight" value="10"/>10
 									</td>
 								</tr>
 								<tr>
 									<td>Power Clean</td>
-									<td><input className="input-text" type="text" name="powerClean"/></td>
-									<td className="increment">
+									<td><input type="text" name="powerClean"/></td>
+									<td>
 									<input type="radio" id="2.5" name="powerWeight" value="2.5"/>2.5
-									<input className= "increment-cell" type="radio" id="5" name="powerWeight" value="5"/>5
-									<input className= "increment-cell" type="radio" id="10" name="powerWeight" value="10"/>10
+									<input type="radio" id="5" name="powerWeight" value="5"/>5
+									<input type="radio" id="10" name="powerWeight" value="10"/>10
 									</td>
 								</tr>
 							</tbody>
 						</table>
-						<div className="buttom-submit-page">
-							<button className="button-submit">Submit</button>
-						</div>
+						<button>Submit</button>
 					</form>
 				{ submitted &&  squatAdded && benchAdded && deadAdded && ohpAdded && squat && bench && deadlift && ohp !== 0
 					? (				
-						<div className="ss-program">
+						<div>
 							<div>
-								<table className="table-space">
+								<table>
 									<tbody>
 										<tr>
-											<th></th>
-											<th className="title-phase">Phase 1</th>
+											<th>Phase 1</th>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 1</th>
+											<th>Week 1</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -146,8 +138,7 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*2} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 2</th>
+											<th>Week 2</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -170,8 +161,7 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*5} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 3</th>
+											<th>Week 3</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -194,12 +184,10 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*8} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="title-phase">Phase 2</th>
+											<th>Phase 2</th>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 1</th>
+											<th>Week 1</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -222,8 +210,7 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*11} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 2</th>
+											<th>Week 2</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -246,8 +233,7 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*14} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 3</th>
+											<th>Week 3</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -270,12 +256,10 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*17} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="title-phase">Phase 3</th>
+											<th>Phase 3</th>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 1</th>
+											<th>Week 1</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -298,8 +282,7 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*18} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 2</th>
+											<th>Week 2</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -322,8 +305,7 @@ class StartingStrength extends React.Component{
 											<td>Deadlift: {deadlift + deadAdded*19} 5x3</td>
 										</tr>
 										<tr>
-											<th></th>
-											<th className="row-spacing">Week 3</th>
+											<th>Week 3</th>
 										</tr>
 										<tr>
 											<th>Day A</th>
@@ -350,11 +332,11 @@ class StartingStrength extends React.Component{
 							</div>
 						</div>
 							) : (
-								<div className="place-holder-text">Input all values to show program.</div>
+								<div>Input all values to show program.</div>
 								)
 							}
 							<div>
-								<button className="button-back">
+								<button>
 									<Link to="/strength">Back</Link>
 								</button>
 							</div>

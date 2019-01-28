@@ -6,9 +6,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">FOUR WALLS OF IRON</h1>
-        <h2 className="subtitle">Find a Program</h2>
+      	<div className="title-banner">
+	        <h1 className="vectro">
+	        <span className="vectro-body">
+	        FOUR WALLS OF IRON
+	        </span>
+	        <span className="vectro-red">I</span>
+	        <span className="vectro-green">I</span>
+	        <span className="vectro-blue">I</span>
+	        </h1>
+        </div>
         <Home />
+        <div className="subtitle">
+        Find a program.
+        </div>
       </div>
     );
   }

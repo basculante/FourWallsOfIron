@@ -7,11 +7,13 @@
 .card-img-top-strength {
 	width: auto;
 	height: 22rem;
+	border-radius: 10px;
 }
 
 .card-img-top-bodybuilding {
 	width: auto;
 	height: 22rem;
+	border-radius: 10px;
 }
 
 .card {
@@ -19,15 +21,25 @@
 	height: 30rem;
 	font-family: 'Anton', sans-serif;
 	font-size: 20px;
-	background: #F8F8F8;
-	border: solid;
-	border-width: 5px;
-	border-color: #F8F8F8;
+	background-image: url("https://www.israelstudies.umd.edu/files/2017/09/dark-1a9lh34.jpg");
+	color: white;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.card.str {
+	width: 40rem;
+	height: 30rem;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	background-image: url("https://www.israelstudies.umd.edu/files/2017/09/dark-1a9lh34.jpg");
 	transition: all .2s ease-in-out;
 }
 
-.card:hover {
-	transform: scale(1.1);
+.card.str:hover {
+	transform: scale(1.06);
 }
 
 .card-title {
