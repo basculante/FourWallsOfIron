@@ -56,14 +56,8 @@ class StartingStrength extends React.Component{
 		const squatWeek3A = Math.floor(((squat + squatAdded * 2) * .85));
 		const squatWeek3B = Math.floor(((squat + squatAdded * 2) * .85) * .85)
 		const squatWeek3C = Math.floor((squat + squatAdded * 2));
-		const deadWeek1A = Math.floor(deadlift * .85);
-		const deadWeek1B = Math.floor((deadlift*.85)*.85);
 		const deadWeek1C = Math.floor(deadlift);
-		const deadWeek2A = Math.floor((deadlift + deadAdded) * .85);
-		const deadWeek2B = Math.floor(((deadlift + deadAdded) * .85) * .85); 
 		const deadWeek2C = Math.floor((deadlift + deadAdded));
-		const deadWeek3A = Math.floor(((deadlift + deadAdded * 2) * .85));
-		const deadWeek3B = Math.floor(((deadlift + deadAdded * 2) * .85) * .85)
 		const deadWeek3C = Math.floor((deadlift + deadAdded * 2));
 		const benchWeek1A = Math.floor(bench * .85);
 		const benchWeek1B = Math.floor((bench*.85)*.85);
@@ -80,6 +74,9 @@ class StartingStrength extends React.Component{
 		const ohpWeek2A = Math.floor((ohp + ohpAdded) * .85);
 		const ohpWeek2B = Math.floor(((ohp + ohpAdded) * .85) * .85); 
 		const ohpWeek2C = Math.floor((ohp + ohpAdded));
+		const powerWeek1A = Math.floor(powerClean);
+		const powerWeek2A = Math.floor(powerClean + powerAdded);
+		const powerWeek3A = Math.floor(powerClean + powerAdded*2);
 		return(
 			<div className="container-ss">
 				<div className="ss-title">
@@ -165,8 +162,8 @@ class StartingStrength extends React.Component{
 											<td>Bench Press: {benchWeek1C} 5x1</td>
 										</tr>
 										<tr>
-											<td>Deadlift: {deadWeek1A} 5x5</td>
-											<td>Deadlift: {deadWeek1B} 5x2</td>
+											<td>Power Clean: {powerWeek1A} 3x5</td>
+											<td>GHR/Back Extension: 10-15x3</td>
 											<td>Deadlift: {deadWeek1C} 5x1</td>
 										</tr>
 										<tr>
@@ -189,8 +186,8 @@ class StartingStrength extends React.Component{
 											<td>Overhead Press: {ohpWeek2C} 5x1</td>
 										</tr>
 										<tr>
-											<td>Deadlift: {deadWeek2A} 5x5</td>
-											<td>Deadlift: {deadWeek2B} 5x2</td>
+											<td>Power Clean: {powerWeek2A} 3x5</td>
+											<td>GHR/Back Extension: 10-15x3</td>
 											<td>Deadlift: {deadWeek2C} 5x1</td>
 										</tr>
 										<tr>
@@ -213,8 +210,8 @@ class StartingStrength extends React.Component{
 											<td>Bench Press: {benchWeek2C} 5x1</td>
 										</tr>
 										<tr>
-											<td>Deadlift: {deadWeek3A} 5x5</td>
-											<td>Deadlift: {deadWeek3B} 5x3</td>
+											<td>Power Clean: {powerWeek3A} 3x5</td>
+											<td>GHR/Back Extension: 10-15x3</td>
 											<td>Deadlift: {deadWeek3C} 5x1</td>
 										</tr>
 										
