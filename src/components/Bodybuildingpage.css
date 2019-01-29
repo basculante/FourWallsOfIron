@@ -1,24 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-.container-str {
+.container-bb {
 	display: flex;
 	flex-direction: column;
 	padding: 100px;
 }
 
-.card-img-top-ss {
+.card.bb {
+	width: 40rem;
+	height: 30rem;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	background-image: url("https://www.israelstudies.umd.edu/files/2017/09/dark-1a9lh34.jpg");
+	transition: all .2s ease-in-out;
+}
+
+.card.bb:hover {
+	transform: scale(1.06);
+}
+
+.card-img-top-no {
 	width: 300px;
 	height: 300px;
 	border-radius: 25px;
 }
 
-.card-img-top-tm {
+.card-img-top-phul {
 	width: 300px;
 	height: 300px;
 	border-radius: 25px;
 }
 
-.card-img-top-531 {
+.card-img-top-phat {
 	width: 300px;
 	height: 300px;
 	border-radius: 25px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Startingstrength.css';
+import './531.css';
 
 class StartingStrength extends React.Component{
 	state = {
@@ -36,50 +36,51 @@ class StartingStrength extends React.Component{
 	}
 
 	render(){
-		const squat = this.state.squat;
-		const bench = this.state.benchPress;
-		const deadlift= this.state.deadlift;
-		const ohp = this.state.ohp;
-		const powerClean = this.state.powerClean;
+		const squat = this.state.squat * .9;
+		const bench = this.state.benchPress * .9;
+		const deadlift= this.state.deadlift * .9;
+		const ohp = this.state.ohp * .9;
 		const squatAdded = this.state.squatAdded;
 		const benchAdded =this.state.benchAdded;
 		const deadAdded = this.state.deadAdded;
 		const ohpAdded = this.state.ohpAdded;
-		const powerAdded = this.state.powerAdded;
 		const submitted = this.state.submitted;
-		const squatWeek1A = Math.floor(squat * .85);
-		const squatWeek1B = Math.floor((squat*.85)*.85);
-		const squatWeek1C = Math.floor(squat);
-		const squatWeek2A = Math.floor((squat + squatAdded) * .85);
-		const squatWeek2B = Math.floor(((squat + squatAdded) * .85) * .85); 
-		const squatWeek2C = Math.floor((squat + squatAdded));
-		const squatWeek3A = Math.floor(((squat + squatAdded * 2) * .85));
-		const squatWeek3B = Math.floor(((squat + squatAdded * 2) * .85) * .85)
-		const squatWeek3C = Math.floor((squat + squatAdded * 2));
-		const deadWeek1A = Math.floor(deadlift * .85);
-		const deadWeek1B = Math.floor((deadlift*.85)*.85);
-		const deadWeek1C = Math.floor(deadlift);
-		const deadWeek2A = Math.floor((deadlift + deadAdded) * .85);
-		const deadWeek2B = Math.floor(((deadlift + deadAdded) * .85) * .85); 
-		const deadWeek2C = Math.floor((deadlift + deadAdded));
-		const deadWeek3A = Math.floor(((deadlift + deadAdded * 2) * .85));
-		const deadWeek3B = Math.floor(((deadlift + deadAdded * 2) * .85) * .85)
-		const deadWeek3C = Math.floor((deadlift + deadAdded * 2));
-		const benchWeek1A = Math.floor(bench * .85);
-		const benchWeek1B = Math.floor((bench*.85)*.85);
-		const benchWeek1C = Math.floor(bench);
-		const benchWeek2A = Math.floor((bench + benchAdded) * .85);
-		const benchWeek2B = Math.floor(((bench + benchAdded) * .85) * .85); 
-		const benchWeek2C = Math.floor((bench + benchAdded));
-		const benchWeek3A = Math.floor(((bench + benchAdded * 2) * .85));
-		const benchWeek3B = Math.floor(((bench + benchAdded * 2) * .85) * .85)
-		const benchWeek3C = Math.floor((bench + benchAdded * 2));
-		const ohpWeek1A = Math.floor(ohp * .85);
-		const ohpWeek1B = Math.floor((ohp*.85)*.85);
-		const ohpWeek1C = Math.floor(ohp);
-		const ohpWeek2A = Math.floor((ohp + ohpAdded) * .85);
-		const ohpWeek2B = Math.floor(((ohp + ohpAdded) * .85) * .85); 
-		const ohpWeek2C = Math.floor((ohp + ohpAdded));
+
+		const squat40 = Math.floor(squat * .4);
+		const squat50 = Math.floor(squat * .5);
+		const squat60 = Math.floor(squat * .6);
+		const squat70 = Math.floor(squat * .7);
+		const squat80 = Math.floor(squat * .8); 
+		const squat85 = Math.floor(squat * .85);
+		const squat90 = Math.floor(squat * .9);
+		const squat95 = Math.floor(squat *.95);
+
+		const dead40 = Math.floor(deadlift * .4);
+		const dead50 = Math.floor(deadlift * .5);
+		const dead60 = Math.floor(deadlift * .6);
+		const dead70 = Math.floor(deadlift * .7);
+		const dead80 = Math.floor(deadlift * .8);
+		const dead85 = Math.floor(deadlift * .85);
+		const dead90 = Math.floor(deadlift * .9);
+		const dead95 = Math.floor(deadlift * .95);
+		
+		const bench40 = Math.floor(bench * .4);
+		const bench50 = Math.floor(bench * .5);
+		const bench60 = Math.floor(bench * .6);
+		const bench70 = Math.floor(bench * .7);
+		const bench80 = Math.floor(bench * .8);
+		const bench85 = Math.floor(bench * .85);
+		const bench90 = Math.floor(bench * .9);
+		const bench95 = Math.floor(bench * .95);
+
+		const ohp40 = Math.floor(ohp * .4);
+		const ohp50 = Math.floor(ohp * .5);
+		const ohp60 = Math.floor(ohp * .6);
+		const ohp70 = Math.floor(ohp * .7);
+		const ohp80 = Math.floor(ohp * .8);
+		const ohp85 = Math.floor(ohp * .85);
+		const ohp90 = Math.floor(ohp * .9);
+		const ohp95 = Math.floor(ohp * .95);
 		return(
 			<div className="container-ss">
 				<div className="ss-title">
@@ -146,78 +147,233 @@ class StartingStrength extends React.Component{
 								<table className="table-space">
 									<tbody>
 										<tr>
-											<th></th>
 											<th className="row-spacing">Week 1</th>
 										</tr>
 										<tr>
-											<th>Day A</th>
-											<th>Day B</th>
-											<th>Day A</th>
+											<th>Press</th>
+											<th>Deadlift</th>
+											<th>Bench Press</th>
+											<th>Squat</th>
 										</tr>
 										<tr>
-											<td>Squat: {squatWeek1A} 5x5</td>
-											<td>Squat: {squatWeek1B} 5x2</td>
-											<td>Squat: {squatWeek1C} 5x1</td>
+											<td>{squat40} 5x1</td>
+											<td>{dead40} 5x1</td>
+											<td>{bench40} 5x1</td>
+											<td>{ohp40} 5x1</td>
 										</tr>
 										<tr>
-											<td>Bench Press: {benchWeek1A} 5x5</td>
-											<td>Overhead Press: {ohpWeek1B} 5x2 </td>
-											<td>Bench Press: {benchWeek1C} 5x1</td>
+											<td>{squat50} 5x1</td>
+											<td>{dead50} 5x1</td>
+											<td>{bench50} 5x1</td>
+											<td>{ohp50} 5x1</td>
 										</tr>
 										<tr>
-											<td>Deadlift: {deadWeek1A} 5x5</td>
-											<td>Deadlift: {deadWeek1B} 5x2</td>
-											<td>Deadlift: {deadWeek1C} 5x1</td>
+											<td>{squat60} 3x1</td>
+											<td>{dead60} 3x1</td>
+											<td>{bench60} 3x1</td>
+											<td>{ohp60} 3x1</td>
 										</tr>
 										<tr>
-											<th></th>
+											<td>{squat70} 5x1</td>
+											<td>{dead70} 5x1</td>
+											<td>{bench70} 5x1</td>
+											<td>{ohp70} 5x1</td>
+										</tr>
+										<tr>
+											<td>{squat80} 5x1</td>
+											<td>{dead80} 5x1</td>
+											<td>{bench80} 5x1</td>
+											<td>{ohp80} 5x1</td>
+										</tr>
+										<tr>
+											<td>{squat85} 5+x1</td>
+											<td>{dead85} 5+x1</td>
+											<td>{bench85} 5+x1</td>
+											<td>{ohp85} 5+x1</td>
+										</tr>
+										<tr>
+											<td>{squat50} 10x5</td>
+											<td>{dead50} 10x5</td>
+											<td>{bench50} 10x5</td>
+											<td>{ohp50} 10x5</td>
+										</tr>
+										<tr>
+											<th className="accessories">Chin-ups</th>
+											<th className="accessories">Hanging leg raise</th>
+											<th className="accessories">Dumbbell row</th>
+											<th className="accessories">Leg curl</th>
+										</tr>
+										<tr>
+											<td>10x5</td>
+											<td>15x5</td>
+											<td>10x5</td>
+											<td>10x5</td>
+										</tr>
+										<tr>
 											<th className="row-spacing">Week 2</th>
 										</tr>
 										<tr>
-											<th>Day A</th>
-											<th>Day B</th>
-											<th>Day A</th>
+											<th>Press</th>
+											<th>Deadlift</th>
+											<th>Bench Press</th>
+											<th>Squat</th>
 										</tr>
 										<tr>
-											<td>Squat: {squatWeek2A} 5x5</td>
-											<td>Squat: {squatWeek2B} 5x3</td>
-											<td>Squat: {squatWeek2C} 5x1</td>
+											<td>{squat40} 5x1</td>
+											<td>{dead40} 5x1</td>
+											<td>{bench40} 5x1</td>
+											<td>{ohp40} 5x1</td>
 										</tr>
 										<tr>
-											<td>Overhead Press: {ohpWeek2A} 5x5</td>
-											<td>Bench Press: {benchWeek1B} 5x2</td>
-											<td>Overhead Press: {ohpWeek2C} 5x1</td>
+											<td>{squat50} 5x1</td>
+											<td>{dead50} 5x1</td>
+											<td>{bench50} 5x1</td>
+											<td>{ohp50} 5x1</td>
 										</tr>
 										<tr>
-											<td>Deadlift: {deadWeek2A} 5x5</td>
-											<td>Deadlift: {deadWeek2B} 5x2</td>
-											<td>Deadlift: {deadWeek2C} 5x1</td>
+											<td>{squat60} 3x1</td>
+											<td>{dead60} 3x1</td>
+											<td>{bench60} 3x1</td>
+											<td>{ohp60} 3x1</td>
 										</tr>
 										<tr>
-											<th></th>
+											<td>{squat70} 3x1</td>
+											<td>{dead70} 3x1</td>
+											<td>{bench70} 3x1</td>
+											<td>{ohp70} 3x1</td>
+										</tr>
+										<tr>
+											<td>{squat80} 3x1</td>
+											<td>{dead80} 3x1</td>
+											<td>{bench80} 3x1</td>
+											<td>{ohp80} 3x1</td>
+										</tr>
+										<tr>
+											<td>{squat90} 3+x1</td>
+											<td>{dead90} 3+x1</td>
+											<td>{bench90} 3+x1</td>
+											<td>{ohp90} 3+x1</td>
+										</tr>
+										<tr>
+											<td>{squat50} 10x5</td>
+											<td>{dead50} 10x5</td>
+											<td>{bench50} 10x5</td>
+											<td>{ohp50} 10x5</td>
+										</tr>
+										<tr>
+											<th>Chin-ups</th>
+											<th>Hanging leg raise</th>
+											<th>Dumbbell row</th>
+											<th>Leg curl</th>
+										</tr>
+										<tr>
+											<td>10x5</td>
+											<td>15x5</td>
+											<td>10x5</td>
+											<td>10x5</td>
+										</tr>
+										<tr>
 											<th className="row-spacing">Week 3</th>
 										</tr>
 										<tr>
-											<th>Day A</th>
-											<th>Day B</th>
-											<th>Day A</th>
+											<th>Press</th>
+											<th>Deadlift</th>
+											<th>Bench Press</th>
+											<th>Squat</th>
 										</tr>
 										<tr>
-											<td>Squat: {squatWeek3A} 5x5</td>
-											<td>Squat: {squatWeek3B} 5x2</td>
-											<td>Squat: {squatWeek3C} 5x1</td>
+											<td>{squat40} 5x1</td>
+											<td>{dead40} 5x1</td>
+											<td>{bench40} 5x1</td>
+											<td>{ohp40} 5x1</td>
 										</tr>
 										<tr>
-											<td>Bench Press: {benchWeek2A} 5x5</td>
-											<td>Overhead Press: {ohpWeek2B} 5x2</td>
-											<td>Bench Press: {benchWeek2C} 5x1</td>
+											<td>{squat50} 5x1</td>
+											<td>{dead50} 5x1</td>
+											<td>{bench50} 5x1</td>
+											<td>{ohp50} 5x1</td>
 										</tr>
 										<tr>
-											<td>Deadlift: {deadWeek3A} 5x5</td>
-											<td>Deadlift: {deadWeek3B} 5x3</td>
-											<td>Deadlift: {deadWeek3C} 5x1</td>
+											<td>{squat60} 3x1</td>
+											<td>{dead60} 3x1</td>
+											<td>{bench60} 3x1</td>
+											<td>{ohp60} 3x1</td>
 										</tr>
-										
+										<tr>
+											<td>{squat80} 5x1</td>
+											<td>{dead80} 5x1</td>
+											<td>{bench80} 5x1</td>
+											<td>{ohp80} 5x1</td>
+										</tr>
+										<tr>
+											<td>{squat85} 3x1</td>
+											<td>{dead85} 3x1</td>
+											<td>{bench85} 3x1</td>
+											<td>{ohp85} 3x1</td>
+										</tr>
+										<tr>
+											<td>{squat95} 1+x1</td>
+											<td>{dead95} 1+x1</td>
+											<td>{bench95} 1+x1</td>
+											<td>{ohp95} 1+x1</td>
+										</tr>
+										<tr>
+											<td>{squat50} 10x5</td>
+											<td>{dead50} 10x5</td>
+											<td>{bench50} 10x5</td>
+											<td>{ohp50} 10x5</td>
+										</tr>
+										<tr>
+											<th>Chin-ups</th>
+											<th>Hanging leg raise</th>
+											<th>Dumbbell row</th>
+											<th>Leg curl</th>
+										</tr>
+										<tr>
+											<td>10x5</td>
+											<td>15x5</td>
+											<td>10x5</td>
+											<td>10x5</td>
+										</tr>
+										<tr>
+											<th className="row-spacing">Week 4</th>
+										</tr>
+										<tr>
+											<th>Press</th>
+											<th>Deadlift</th>
+											<th>Bench Press</th>
+											<th>Squat</th>
+										</tr>
+										<tr>
+											<td>{squat40} 5x1</td>
+											<td>{dead40} 5x1</td>
+											<td>{bench40} 5x1</td>
+											<td>{ohp40} 5x1</td>
+										</tr>
+										<tr>
+											<td>{squat50} 5x1</td>
+											<td>{dead50} 5x1</td>
+											<td>{bench50} 5x1</td>
+											<td>{ohp50} 5x1</td>
+										</tr>
+										<tr>
+											<td>{squat60} 5x1</td>
+											<td>{dead60} 5x1</td>
+											<td>{bench60} 5x1</td>
+											<td>{ohp60} 5x1</td>
+										</tr>
+										<tr>
+											<th>Chin-ups</th>
+											<th>Hanging leg raise</th>
+											<th>Dumbbell row</th>
+											<th>Leg curl</th>
+										</tr>
+										<tr>
+											<td>10x5</td>
+											<td>15x5</td>
+											<td>10x5</td>
+											<td>10x5</td>
+										</tr>
 									</tbody>
 								</table>
 							</div>

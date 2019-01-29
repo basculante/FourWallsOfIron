@@ -47,6 +47,7 @@ class StartingStrength extends React.Component{
 		const ohpAdded = this.state.ohpAdded;
 		const powerAdded = this.state.powerAdded;
 		const submitted = this.state.submitted;
+
 		const squatWeek1A = Math.floor(squat * .85);
 		const squatWeek1B = Math.floor((squat*.85)*.85);
 		const squatWeek1C = Math.floor(squat);
@@ -56,24 +57,22 @@ class StartingStrength extends React.Component{
 		const squatWeek3A = Math.floor(((squat + squatAdded * 2) * .85));
 		const squatWeek3B = Math.floor(((squat + squatAdded * 2) * .85) * .85)
 		const squatWeek3C = Math.floor((squat + squatAdded * 2));
+
 		const deadWeek1C = Math.floor(deadlift);
 		const deadWeek2C = Math.floor((deadlift + deadAdded));
 		const deadWeek3C = Math.floor((deadlift + deadAdded * 2));
+
 		const benchWeek1A = Math.floor(bench * .85);
 		const benchWeek1B = Math.floor((bench*.85)*.85);
 		const benchWeek1C = Math.floor(bench);
 		const benchWeek2A = Math.floor((bench + benchAdded) * .85);
-		const benchWeek2B = Math.floor(((bench + benchAdded) * .85) * .85); 
 		const benchWeek2C = Math.floor((bench + benchAdded));
-		const benchWeek3A = Math.floor(((bench + benchAdded * 2) * .85));
-		const benchWeek3B = Math.floor(((bench + benchAdded * 2) * .85) * .85)
-		const benchWeek3C = Math.floor((bench + benchAdded * 2));
-		const ohpWeek1A = Math.floor(ohp * .85);
+
 		const ohpWeek1B = Math.floor((ohp*.85)*.85);
-		const ohpWeek1C = Math.floor(ohp);
 		const ohpWeek2A = Math.floor((ohp + ohpAdded) * .85);
 		const ohpWeek2B = Math.floor(((ohp + ohpAdded) * .85) * .85); 
 		const ohpWeek2C = Math.floor((ohp + ohpAdded));
+
 		const powerWeek1A = Math.floor(powerClean);
 		const powerWeek2A = Math.floor(powerClean + powerAdded);
 		const powerWeek3A = Math.floor(powerClean + powerAdded*2);
