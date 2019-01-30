@@ -47,3 +47,7 @@
 .button-back:hover {
 	transform: scale(1.06);
 }
+
+.increment-cell {
+	margin: 5px;
+}

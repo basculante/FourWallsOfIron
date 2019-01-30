@@ -64,7 +64,7 @@ class StartingStrength extends React.Component{
 									<td>Squat</td>
 									<td><input className="input-text" type="text" name="squat"/></td>
 									<td className="increment">
-									<input type="radio" id="2.5" name="squatWeight" value="2.5"/>2.5
+									<input className= "increment-cell" type="radio" id="2.5" name="squatWeight" value="2.5"/>2.5
 									<input className= "increment-cell" type="radio" id="5" name="squatWeight" value="5"/>5
 									<input className= "increment-cell" type="radio" id="10" name="squatWeight" value="10"/>10
 									</td>
@@ -73,7 +73,7 @@ class StartingStrength extends React.Component{
 									<td>Bench Press</td>
 									<td><input className="input-text" type="text" name="benchPress"/></td>
 									<td className="increment">
-									<input type="radio" id="2.5" name="benchWeight" value="2.5"/>2.5
+									<input className= "increment-cell" type="radio" id="2.5" name="benchWeight" value="2.5"/>2.5
 									<input className= "increment-cell" type="radio" id="5" name="benchWeight" value="5"/>5
 									<input className= "increment-cell" type="radio" id="10" name="benchWeight" value="10"/>10
 									</td>
@@ -82,7 +82,7 @@ class StartingStrength extends React.Component{
 									<td>Deadlift</td>
 									<td><input className="input-text" type="text" name="deadlift"/></td>
 									<td className="increment">
-									<input type="radio" id="2.5" name="deadliftWeight" value="2.5"/>2.5
+									<input className= "increment-cell" type="radio" id="2.5" name="deadliftWeight" value="2.5"/>2.5
 									<input className= "increment-cell" type="radio" id="5" name="deadliftWeight" value="5"/>5
 									<input className= "increment-cell" type="radio" id="10" name="deadliftWeight" value="10"/>10
 									</td>
@@ -91,7 +91,7 @@ class StartingStrength extends React.Component{
 									<td>Overhead Press</td>
 									<td><input className="input-text" type="text" name="ohp"/></td>
 									<td className="increment">
-									<input type="radio" id="2.5" name="ohpWeight" value="2.5"/>2.5
+									<input className= "increment-cell" type="radio" id="2.5" name="ohpWeight" value="2.5"/>2.5
 									<input className= "increment-cell" type="radio" id="5" name="ohpWeight" value="5"/>5
 									<input className= "increment-cell" type="radio" id="10" name="ohpWeight" value="10"/>10
 									</td>
@@ -100,7 +100,7 @@ class StartingStrength extends React.Component{
 									<td>Power Clean</td>
 									<td><input className="input-text" type="text" name="powerClean"/></td>
 									<td className="increment">
-									<input type="radio" id="2.5" name="powerWeight" value="2.5"/>2.5
+									<input className= "increment-cell" type="radio" id="2.5" name="powerWeight" value="2.5"/>2.5
 									<input className= "increment-cell" type="radio" id="5" name="powerWeight" value="5"/>5
 									<input className= "increment-cell" type="radio" id="10" name="powerWeight" value="10"/>10
 									</td>
@@ -354,9 +354,11 @@ class StartingStrength extends React.Component{
 								)
 							}
 							<div>
+							<Link to="/strength">
 								<button className="button-back">
-									<Link to="/strength">Back</Link>
+									Back
 								</button>
+							</Link>
 							</div>
 						</div>
 		)
