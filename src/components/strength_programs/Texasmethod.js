@@ -223,9 +223,11 @@ class StartingStrength extends React.Component{
 								)
 							}
 							<div>
+							<Link to="/strength">
 								<button className="button-back">
-									<Link to="/strength">Back</Link>
+									Back
 								</button>
+							</Link>
 							</div>
 						</div>
 		)

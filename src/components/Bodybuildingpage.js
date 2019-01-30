@@ -28,9 +28,11 @@ const Strength = () => (
 		</div>
 	</div>
 	<div className="button-back-div">
+	<Link to="/">
 		<button className="button-back">
-			<Link to="/">Back</Link>
+			Back
 		</button>
+	</Link>
 	</div>
 </div>
 	);
